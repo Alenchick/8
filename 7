@@ -1,0 +1,8 @@
+from itertools import product
+p = product('балкон', repeat=5)
+s = map(lambda x: ''.join(x),p)
+q=0
+for x in s:
+    if (x.count('б')!=0):
+        q+=1
+print(q)
