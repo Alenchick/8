@@ -1,0 +1,8 @@
+from itertools import product
+p = product('купчиха', repeat=7)
+s = map(lambda x: ''.join(x),p)
+q=0
+for x in s:
+    if (x[0]!='ч') and (x.count('иау')==0) and (x.count('к')==1) and (x.count('у')==1) and (x.count('п')==1) and (x.count('ч')==1) and  (x.count('и')==1) and (x.count('х')==1) and (x.count('а')==1):
+        q+=1
+print(q)
