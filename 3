@@ -1,0 +1,8 @@
+from itertools import product
+p = product('mapt', repeat=6)
+s = map(lambda x: ''.join(x),p)
+q=0
+for x in s:
+    if x.count('p')==2:
+        q+=1
+print(q)
