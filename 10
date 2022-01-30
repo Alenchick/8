@@ -1,0 +1,8 @@
+from itertools import product
+p = product('абрикос', repeat=7)
+s = map(lambda x: ''.join(x),p)
+q=0
+for x in s:
+    if (x.count('аи')==0) and (x.count('ио')==0) and (x.count('ао')==0) and (x.count('бр')==0) and (x.count('рк')==0) and (x.count('кс')==0) and (x.count('бк')==0) and (x.count('бс')==0) and (x.count('рс')==0) and (x.count('а')==1) and (x.count('б')==1) and (x.count('р')==1) and (x.count('и')==1) and  (x.count('к')==1) and (x.count('о')==1) and (x.count('с')==1):
+        q+=1
+print(q)
