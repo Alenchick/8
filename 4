@@ -3,6 +3,6 @@ p = product('ток', repeat=6)
 s = map(lambda x: ''.join(x),p)
 q=0
 for x in s:
-    if (x[0]=='т') and (x[0]=='к') and x.count('т')!=0 and x.count('о')!=0 and x.count('к')!=0:
+    if ((x[0]=='т') or (x[0]=='к')) and (x.count('т')!=0 and x.count('о')!=0 and x.count('к')!=0):
         q+=1
 print(q)
