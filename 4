@@ -1,0 +1,8 @@
+from itertools import product
+p = product('ток', repeat=6)
+s = map(lambda x: ''.join(x),p)
+q=0
+for x in s:
+    if (x[0] == 'т'):
+        q+=1
+print(q)
