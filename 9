@@ -1,0 +1,8 @@
+from itertools import product
+p = product('нобелий', repeat=7)
+s = map(lambda x: ''.join(x),p)
+q=0
+for x in s:
+    if (x[0]!='й') and (x.count('ийо')==0) and (x.count('н')==1) and (x.count('о')==1) and (x.count('б')==1) and (x.count('е')==1) and  (x.count('л')==1) and (x.count('и')==1) and (x.count('й')==1):
+        q+=1
+print(q)
